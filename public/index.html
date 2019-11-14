@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/tabs.css" />
+</head>
+<body>
+    <section>
+        <nav class="c-tabs" data-toggle="c-tabs" role="navigation">
+            <ul class="c-tab--navigation">
+                <li class="c-tab--item"><a href="#Tab1" class="active">Tab 1</a></li>
+                <li class="c-tab--item"><a href="#Tab2">Tab 2</a></li>
+                <li class="c-tab--item"><a href="#Tab3">Tab 3</a></li>
+                <li class="c-tab--slider">
+                    <div class="c-tab-indicator"></div>
+                </li>
+            </ul>
+        </nav>
+        <div class="c-tab--content-container">
+            <div id="Tab1" class="c-tab--content active">
+                <p>Tab 1 Content</p>
+            </div>
+            <div id="Tab2" class="c-tab--content">
+                <p>Tab 2 Content</p>
+            </div>
+            <div id="Tab3" class="c-tab--content">
+                <p>Tab 3 Content</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./js/tabs.js"></script>
+    <script>component.tabs.initTabs();</script>
+</body>
+</html>
